@@ -1,10 +1,9 @@
 import datetime as _dt
 import hashlib
 
-
 class Block:
-    def __init__(self, hash_sebelumnya, data):
+    def __init__(self, previous_hash, data):
         self.data = data
-        self.hash_sebelumnya = hash_sebelumnya
-        string = "".join(data) + hash_sebelumnya
+        self.previous_hash = previous_hash
+        string = "".join(data) + previous_hash
         self.block_hash = hashlib.sha256((string).encode()).hexdigest()

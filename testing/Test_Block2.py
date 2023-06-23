@@ -1,19 +1,16 @@
 from Test_Block import Block
 
 blockchain = []
-
 genesis_block = Block("Sekarang bulan march tahun 2024", [
-                      "Dito Aditya", "100", "100", "100", "100"])
-
+                      "FIRST BLOCK", "1", "1", "1", "1"])
 second_block = Block(genesis_block.block_hash, [
-                     "Agam Syahputra", "50", "100", "100", "100"])
-
+                     "SECOND BLOCK", "1", "1", "1", "1"])
 third_block = Block(second_block.block_hash, [
-    "Putri Permata", "100", "100", "100", "100"])
+                      "THIRD BLOCK", "1", "1", "1", "1"])
 
-print("block pertama")
+print("FIRST BLOCK")
 print(genesis_block.block_hash)
-print("block kedua")
+print("SECOND BLOCK")
 print(second_block.block_hash)
-print("block ketiga")
+print("THIRD BLOCK")
 print(third_block.block_hash)
