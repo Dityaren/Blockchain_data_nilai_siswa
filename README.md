@@ -1,4 +1,4 @@
-# Simple Blockchain Web Application
+# Student Grade Data BLockchain
 
 This is a simple blockchain web application implemented using FastAPI and Python. The application allows you to create blocks with student data and view the blockchain.
 
